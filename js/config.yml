@@ -77,6 +77,7 @@ Rule:
 ## 您可以在此处插入您补充的自定义规则
 
 # 国内网站
+- DOMAIN-SUFFIX,monitor.uu.qq.com,REJECT
 - DOMAIN-SUFFIX,cn,DIRECT
 - DOMAIN-KEYWORD,-cn,DIRECT
 - DOMAIN-SUFFIX,126.com,DIRECT
