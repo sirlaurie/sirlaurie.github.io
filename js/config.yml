@@ -74,7 +74,8 @@ Rule:
 
 
 # 自定义规则
-## 您可以在此处插入您补充的自定义规则
+- DOMAIN-SUFFIX,adeventtracker.spotify.com,REJECT
+- DOMAIN-SUFFIX,g.doubleclick.net,REJECT
 
 # 国内网站
 - DOMAIN-SUFFIX,monitor.uu.qq.com,REJECT
