@@ -77,7 +77,8 @@ Rule:
 - DOMAIN-SUFFIX,adeventtracker.spotify.com,REJECT
 - DOMAIN-SUFFIX,doubleclick.net,REJECT
 - DOMAIN-SUFFIX,agkn.com,REJECT
-- DOMAIN-SUFFIX,,REJECT
+- DOMAIN-SUFFIX,jpush.cn,REJECT
+- DOMAIN-SUFFIX,huodonghezi.com,REJECT
 
 # 国内网站
 - DOMAIN-SUFFIX,monitor.uu.qq.com,REJECT
