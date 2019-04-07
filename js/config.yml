@@ -14,7 +14,7 @@ port: 7890
 socks-port: 7891
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
-redir-port: 7892
+# redir-port: 7892
 
 # 允许局域网的连接（可用来共享代理）
 allow-lan: true
@@ -27,7 +27,7 @@ mode: Rule
 log-level: debug
 
 dns:
-  enable: true # set true to enable dns (default is false)
+  enable: false # set true to enable dns (default is false)
   ipv6: true # default is false
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
