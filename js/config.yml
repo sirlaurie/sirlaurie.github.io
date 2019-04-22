@@ -51,7 +51,7 @@ Proxy:
 - { name: "lightsail", type: ss, server: 52.199.222.158, port: 189, cipher: AES-256-CFB, password: "justfuckgfw!!!", obfs: http, obfs-host: office.com }
 - { name: "awscn2", type: ss, server: 144.34.235.192, port: 443, cipher: AES-256-CFB, password: "justfuckgfw!!!", obfs: http, obfs-host: office.com }
 - { name: "bandwagon", type: ss, server: 23.83.227.84, port: 189, cipher: AES-256-CFB, password: "haienlightened!", obfs: http, obfs-host: office.com }
-- { name: "NetBoost", type: ss, server: hk2.sscloud.xyz, port: 23808, cipher: AES_128_GCM, password: "372458"}
+- { name: "NetBoost", type: ss, server: hk2.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 
 # vmess
 # 支持加密方式：auto / aes-128-gcm / chacha20-poly1305 / none
