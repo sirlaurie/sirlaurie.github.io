@@ -63,13 +63,13 @@ Proxy:
 
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
-- { name: "auto", type: url-test, proxies: ["lightsail", "awscn2", "bandwagon"], url: "http://connectivitycheck.gstatic.com/generate_204", interval: 300 }
+- { name: "auto", type: url-test, proxies: ["NetBoost", "lightsail", "awscn2", "bandwagon"], url: "http://connectivitycheck.gstatic.com/generate_204", interval: 300 }
 # fallback 可以尽量按照用户书写的服务器顺序，在确保服务器可用的情况下，自动选择服务器
-- { name: "fallback-auto", type: fallback, proxies: ["lightsail", "awscn2", "bandwagon"], url: "http://connectivitycheck.gstatic.com/generate_204", interval: 300 }
+- { name: "fallback-auto", type: fallback, proxies: ["NetBoost", "lightsail", "awscn2", "bandwagon"], url: "http://connectivitycheck.gstatic.com/generate_204", interval: 300 }
 
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 # 您也可以使用 RESTful API 去切换服务器，这种方式推荐在 GUI 中使用
-- { name: "Proxy", type: select, proxies: ["lightsail", "awscn2", "bandwagon", "auto"] }
+- { name: "Proxy", type: select, proxies: ["NetBoost", "lightsail", "awscn2", "bandwagon", "auto"] }
 
 Rule:
 # Apple 服务优化
