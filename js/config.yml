@@ -253,4 +253,4 @@ Rule:
 
 # 最终规则
 - GEOIP,CN,DIRECT
-- FINAL,auto
+- FINAL,Proxy
