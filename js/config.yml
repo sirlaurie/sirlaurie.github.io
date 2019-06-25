@@ -51,7 +51,7 @@ Proxy:
 - { name: "cube", type: ss, server: 103.118.41.181, port: 443, cipher: AEAD_AES_256_GCM, password: "haienlightened!"}
 - { name: "NetBoostHK", type: ss, server: hk.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 - { name: "NetBoostHK2", type: ss, server: hk2.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
-- { name: "NetBoostSG", type: ss, server: sg.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
+- { name: "NetBoostUS", type: ss, server: us6.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 
 # vmess
 # 支持加密方式：auto / aes-128-gcm / chacha20-poly1305 / none
