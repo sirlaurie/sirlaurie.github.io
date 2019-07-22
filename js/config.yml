@@ -48,7 +48,8 @@ Proxy:
 # 支持加密方式： AEAD_AES_128_GCM AEAD_AES_192_GCM AEAD_AES_256_GCM AEAD_CHACHA20_POLY1305 AES-128-CTR AES-192-CTR AES-256-CTR AES-128-CFB AES-192-CFB AES-256-CFB CHACHA20-IETF XCHACHA20
 # clash 额外支持 chacha20 rc4-md5 xchacha20-ietf-poly1305 加密方式
 
-- { name: "cube", type: ss, server: 103.118.41.181, port: 443, cipher: AEAD_AES_256_GCM, password: "haienlightened!"}
+- { name: "cubehk", type: ss, server: 103.118.41.94, port: 443, cipher: AEAD_AES_256_GCM, password: "haienlightened!"}
+- { name: "cubeUS", type: ss, server: 103.95.207.224, port: 443, cipher: AEAD_AES_256_GCM, password: "haienlightened!"}
 - { name: "NetBoostHK", type: ss, server: hk.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 - { name: "NetBoostHK2", type: ss, server: hk2.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 - { name: "NetBoostUS", type: ss, server: us6.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
@@ -63,13 +64,13 @@ Proxy:
 
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
-- { name: "auto", type: url-test, proxies: ["cube", "NetBoostHK", "NetBoostHK2", "NetBoostUS"], url: "https://www.gstatic.com/generate_204", interval: 300 }
+- { name: "auto", type: url-test, proxies: ["cube", "cubehk", "cubeUS", "NetBoostHK", "NetBoostHK2", "NetBoostUS"], url: "https://www.gstatic.com/generate_204", interval: 300 }
 # fallback 可以尽量按照用户书写的服务器顺序，在确保服务器可用的情况下，自动选择服务器
-- { name: "fallback-auto", type: fallback, proxies: ["cube", "NetBoostHK", "NetBoostHK2", "NetBoostUS"], url: "https://www.gstatic.com/generate_204", interval: 300 }
+- { name: "fallback-auto", type: fallback, proxies: ["cube", "cubehk", "cubeUS", "NetBoostHK", "NetBoostHK2", "NetBoostUS"], url: "https://www.gstatic.com/generate_204", interval: 300 }
 
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 # 您也可以使用 RESTful API 去切换服务器，这种方式推荐在 GUI 中使用
-- { name: "Proxy", type: select, proxies: ["cube", "NetBoostHK", "NetBoostHK2", "NetBoostUS", "auto"] }
+- { name: "Proxy", type: select, proxies: ["cube", "cubehk", "cubeUS", "NetBoostHK", "NetBoostHK2", "NetBoostUS", "auto"] }
 
 Rule:
 # Apple 服务优化
