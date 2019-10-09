@@ -49,7 +49,7 @@ Proxy:
 # clash 额外支持 chacha20 rc4-md5 xchacha20-ietf-poly1305 加密方式
 
 - { name: "cubehk", type: ss, server: 103.118.41.94, port: 443, cipher: AEAD_AES_256_GCM, password: "haienlightened!"}
-- { name: "cubeUS", type: ss, server: 103.95.207.224, port: 30453, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
+- { name: "cubeUS", type: ss, server: 103.95.207.224, port: 443, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
 - { name: "NetBoostHK", type: ss, server: hk.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 - { name: "NetBoostHK2", type: ss, server: hk2.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
 - { name: "NetBoostUS", type: ss, server: us6.sscloud.xyz, port: 23808, cipher: AEAD_AES_128_GCM, password: "372458"}
