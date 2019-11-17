@@ -49,17 +49,17 @@ Proxy:
 # clash 额外支持 chacha20 rc4-md5 xchacha20-ietf-poly1305 加密方式
 
 - { name: "cubeUS", type: ss, server: 103.95.207.224, port: 443, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
-- { name: "digitalvm", type: ss, server: 45.88.43.144, port: 443, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
+- { name: "Azure", type: ss, server: 40.74.86.207, port: 443, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
 
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
-- { name: "auto", type: url-test, proxies: ["cubeUS", "digitalvm"], url: "https://www.gstatic.com/generate_204", interval: 300 }
+- { name: "auto", type: url-test, proxies: ["cubeUS", "Azure"], url: "https://www.gstatic.com/generate_204", interval: 300 }
 # fallback 可以尽量按照用户书写的服务器顺序，在确保服务器可用的情况下，自动选择服务器
-- { name: "fallback-auto", type: fallback, proxies: ["cubeUS", "digitalvm"], url: "https://www.gstatic.com/generate_204", interval: 300 }
+- { name: "fallback-auto", type: fallback, proxies: ["cubeUS", "Azure"], url: "https://www.gstatic.com/generate_204", interval: 300 }
 
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 # 您也可以使用 RESTful API 去切换服务器，这种方式推荐在 GUI 中使用
-- { name: "Proxy", type: select, proxies: ["cubeUS", "digitalvm", "auto"] }
+- { name: "Proxy", type: select, proxies: ["cubeUS", "Azure", "auto"] }
 
 Rule:
 # Apple 服务优化
