@@ -16,7 +16,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 Proxy:
-- { name: "cubeUS", type: ss, server: 103.95.207.224, port: 3389, cipher: chacha20-ietf-poly1305, password: "haienlightened!"}
+- { name: "cubeUS", type: ss, server: 103.95.207.224, port: 443, cipher: chacha20-ietf-poly1305, password: "haienlightened!"}
 - { name: "Azure", type: ss, server: 40.74.86.207, port: 443, cipher: chacha20-ietf-poly1305, password: "PepBSHJ4mdGw"}
 
 Proxy Group:
